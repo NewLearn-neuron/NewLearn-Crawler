@@ -120,7 +120,7 @@ def save_articles_to_redis(category_id, articles):
             article_id = redis_client.incr("article_id")
             
             redis_article = {
-                "articleId": article_id,
+                "redisArticleId": article_id,
                 "title": article["title"],
                 "source": article["source"],
                 "publishedDate": article["publishedDate"],
