@@ -149,7 +149,7 @@ def fetch_recent_articles_by_category(category_id):
     articles, seen_urls = [], set()
     options = webdriver.ChromeOptions()
 
-    # options.add_argument('--headless')  
+    options.add_argument('--headless')  
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')

@@ -7,7 +7,7 @@ app = FastAPI(debug=True)
 # 스케줄러 초기화
 scheduler = BackgroundScheduler()
 
-# 최근 기사 크롤링 작업 추가, 8시간마다 실행행
+# 최근 기사 크롤링 작업 추가, 8시간마다 실행
 scheduler.add_job(crawl_recent_articles, "interval", hours=8)  
 
 # 즉시 실행
